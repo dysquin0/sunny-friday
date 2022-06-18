@@ -12,6 +12,8 @@ import { WorkWithUsComponent } from './pages/work-with-us/work-with-us/work-with
 import { DefaultComponent } from './common/default/default/default.component';
 import { HeaderComponent } from './common/header/header.component';
 import { NavigationComponent } from './common/navigation/navigation.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,15 @@ import { NavigationComponent } from './common/navigation/navigation.component';
     WorkWithUsComponent,
     DefaultComponent,
     HeaderComponent,
-    NavigationComponent
+    NavigationComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule,
   ],
   bootstrap: [AppComponent]
 })

@@ -11,7 +11,8 @@ export class NavigationComponent implements OnInit {
     { name: 'home', route: 'home' },
     { name: 'about-us', route: 'about-us' },
     { name: 'our-services', route: 'our-services' },
-    { name: 'work-with-us', route: 'work-with-us' }
+    { name: 'work-with-us', route: 'work-with-us' },
+    { name: 'contact-us', route: 'contact-us' }
   ];
 
   ngOnInit(): void {
