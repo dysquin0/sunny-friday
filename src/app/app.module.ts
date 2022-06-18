@@ -4,11 +4,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './pages/home/home/home.component';
 import { AboutUsComponent } from './pages/about-us/about-us/about-us.component';
 import { OurServicesComponent } from './pages/our-services/our-services/our-services.component';
 import { WorkWithUsComponent } from './pages/work-with-us/work-with-us/work-with-us.component';
 import { DefaultComponent } from './common/default/default/default.component';
+import { HeaderComponent } from './common/header/header.component';
+import { NavigationComponent } from './common/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,15 @@ import { DefaultComponent } from './common/default/default/default.component';
     AboutUsComponent,
     OurServicesComponent,
     WorkWithUsComponent,
-    DefaultComponent
+    DefaultComponent,
+    HeaderComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   bootstrap: [AppComponent]
 })
