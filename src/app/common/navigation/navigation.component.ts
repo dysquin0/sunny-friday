@@ -8,8 +8,8 @@ export class NavigationComponent implements OnInit {
 
   navItems: any[] = [
     { name: 'Home', route: 'home' },
-    { name: 'About us', route: 'about-us' },
     { name: 'Our Services', route: 'our-services' },
+    { name: 'About us', route: 'about-us' },
     { name: 'Work with Us', route: 'work-with-us' }
   ];
 
