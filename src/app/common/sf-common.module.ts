@@ -6,24 +6,25 @@ import { AppRoutingModule } from '../app-routing.module';
 import { DefaultComponent } from './default/default.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
-
-
+import { ContactUsBtnComponent } from './contact-us-btn/contact-us-btn.component';
 @NgModule({
     imports: [
         CommonModule,
         SharedModule,
         MaterialModule,
-        AppRoutingModule
+        AppRoutingModule     
     ],
     exports: [
         DefaultComponent,
         HeaderComponent,
-        NavigationComponent
+        NavigationComponent,
+        ContactUsBtnComponent
     ],
     declarations: [
         DefaultComponent,
         HeaderComponent,
-        NavigationComponent
+        NavigationComponent,
+        ContactUsBtnComponent
     ]
 })
 

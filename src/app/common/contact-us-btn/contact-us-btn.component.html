@@ -1,0 +1,7 @@
+<button mat-raised-button class="contact-us-btn"
+        *ngFor="let contactUsBtn of contactUsBtns"
+        routerLinkActive="active-link"
+        [routerLink]="[contactUsBtn.route]"        
+>
+    {{ contactUsBtn.name }}
+</button>
