@@ -1,6 +1,6 @@
-<mat-nav-list>
+<div class="nav-items">
     <a *ngFor="let navItem of navItems" mat-list-item routerLinkActive="active-link"
         [routerLink]="[navItem.route]">
         {{ navItem.name }}
     </a>
-</mat-nav-list>
+</div>

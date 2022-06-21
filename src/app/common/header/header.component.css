@@ -1,0 +1,13 @@
+.mat-toolbar{
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+.mat-toolbar-row img{
+    width: 2.5em;
+    height: 2.5em;
+    margin-left: 9.55em;
+}
+.navigation-menu{
+    width:100%;
+}
