@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { SFCommonModule } from './common/sf-common.module';
 import { HomeModule } from './pages/home/home.module';
+import { ContactUsModule } from './pages/contact-us/contact-us.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeModule } from './pages/home/home.module';
     HttpClientModule,
     SFCommonModule,
     HomeModule,
-    LayoutModule
+    LayoutModule,
+    ContactUsModule
   ],
   bootstrap: [AppComponent]
 })

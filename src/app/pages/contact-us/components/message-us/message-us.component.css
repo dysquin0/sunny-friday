@@ -1,0 +1,39 @@
+.form-field{
+    width: 556px;
+    height: 56px;
+}
+
+.form-field-textarea{
+    width: 556px;
+}
+
+.textarea-field{
+    resize: none;
+    height: 250px;
+}
+
+.submit-button{
+    width: 87px;
+    height: 40px;
+
+    /* SF/Yellow 30 */
+
+    background: #F3AC1D;
+    border-radius: 100px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+
+    font-weight: bold;
+}
+
+.static-image{
+    width:744px;
+    height: 522px;
+    position: absolute;
+    top: 208px;
+    left: 768px;
+}
