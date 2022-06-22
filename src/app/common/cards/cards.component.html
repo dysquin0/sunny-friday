@@ -1,0 +1,9 @@
+<mat-card
+  *ngFor="let card of data"
+  (click)="onCardClick($event)"
+  matRipple
+  class="clickable"
+>
+  <img mat-card-image src="{{ card.image }}" />
+  <mat-card-title>{{ card.title }}</mat-card-title>
+</mat-card>

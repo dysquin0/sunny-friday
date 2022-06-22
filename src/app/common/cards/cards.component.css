@@ -1,0 +1,15 @@
+.mat-card {
+    width: 360px;
+    height: 480px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.mat-card-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+}

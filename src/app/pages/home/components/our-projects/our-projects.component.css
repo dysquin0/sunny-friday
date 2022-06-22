@@ -1,0 +1,10 @@
+::ng-deep app-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents {
+    background-color: #fafafa;
+    padding: 20px 0;
+}
