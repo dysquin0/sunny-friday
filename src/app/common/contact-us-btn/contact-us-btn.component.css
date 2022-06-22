@@ -1,0 +1,14 @@
+.contact-us-btn{
+    border-radius: 4em;
+    background: #F3AC1D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 9.55em;
+}
