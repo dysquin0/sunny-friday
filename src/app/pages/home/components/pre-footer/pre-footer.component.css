@@ -1,0 +1,40 @@
+.container {
+    position: relative;
+}
+
+img {
+    filter: brightness(50%);
+}
+
+.overlapping-contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.pre-footer-headline,
+.pre-footer-body {
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+    color: white;
+    display: inherit;
+}
+
+.pre-footer-headline {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.pre-footer-body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+::ng-deep .overlapping-contents .contact-us-btn {
+    margin: 20px auto;
+}
