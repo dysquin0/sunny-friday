@@ -1,0 +1,26 @@
+.section-label{
+    /* SF/Headline 5 */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    /* identical to box height, or 142% */
+
+    display: inline-block;
+    align-items: center;
+
+    color: #000000;
+
+    padding: 5px;
+}
+
+.section-icon{
+    vertical-align: text-bottom;
+    color: #543287;
+}
+
+.section-details{
+    text-indent: 15%;
+}
