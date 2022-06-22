@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
@@ -8,11 +7,10 @@ import { Component, OnInit } from '@angular/core';
 export class NavigationComponent implements OnInit {
 
   navItems: any[] = [
-    { name: 'home', route: 'home' },
-    { name: 'about-us', route: 'about-us' },
-    { name: 'our-services', route: 'our-services' },
-    { name: 'work-with-us', route: 'work-with-us' },
-    { name: 'contact-us', route: 'contact-us' }
+    { name: 'Home', route: 'home' },
+    { name: 'Our Services', route: 'our-services' },
+    { name: 'About us', route: 'about-us' },
+    { name: 'Work with Us', route: 'work-with-us' }
   ];
 
   ngOnInit(): void {
