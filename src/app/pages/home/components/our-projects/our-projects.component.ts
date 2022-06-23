@@ -9,7 +9,7 @@ export class OurProjectsComponent implements OnInit {
   ngOnInit(): void {}
   title = 'Our projects';
   link = {
-    label: 'See more',
+    label: 'See More',
     link: '/our-services',
   };
   cards = [

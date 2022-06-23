@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>{{ data.cards }}</h1>
+<div mat-dialog-content>
+  <div class="videoWrapper">
+    <iframe [src]="safeUrl" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<mat-dialog-actions align="end">
+  <app-contact-us-btn></app-contact-us-btn>
+  <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>
