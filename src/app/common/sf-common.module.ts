@@ -7,6 +7,7 @@ import { DefaultComponent } from './default/default.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ContactUsBtnComponent } from './contact-us-btn/contact-us-btn.component';
+import { GlobalFooterComponent } from './global-footer/global-footer.component';
 @NgModule({
     imports: [
         CommonModule,
@@ -18,13 +19,15 @@ import { ContactUsBtnComponent } from './contact-us-btn/contact-us-btn.component
         DefaultComponent,
         HeaderComponent,
         NavigationComponent,
-        ContactUsBtnComponent
+        ContactUsBtnComponent,
+        GlobalFooterComponent
     ],
     declarations: [
         DefaultComponent,
         HeaderComponent,
         NavigationComponent,
-        ContactUsBtnComponent
+        ContactUsBtnComponent,
+        GlobalFooterComponent
     ]
 })
 
