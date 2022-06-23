@@ -1,11 +1,11 @@
 import { Component, Inject, Input, OnInit } from '@angular/core';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
 
 export interface DialogData {
   cards: any;
 }
-
+var videoId: any;
 @Component({
   selector: 'app-cards',
   templateUrl: './cards.component.html',
@@ -19,6 +19,7 @@ export class CardsComponent implements OnInit {
   constructor(public dialog: MatDialog) {}
 
   openDialog(card: any) {
+    videoId = card.videoId;
     this.dialog.open(OurProjectModalComponent, {
       data: {
         cards: card.title,
@@ -36,13 +37,12 @@ export class CardsComponent implements OnInit {
 })
 export class OurProjectModalComponent {
   safeUrl: any;
-
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: DialogData,
     public sanitizer: DomSanitizer
   ) {
     this.safeUrl = sanitizer.bypassSecurityTrustResourceUrl(
-      `https://www.youtube.com/embed/ty3U4R8fbLI`
+      `https://www.youtube.com/embed/${videoId}`
     );
   }
 }
