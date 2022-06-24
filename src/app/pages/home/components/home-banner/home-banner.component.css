@@ -37,6 +37,6 @@
     color: #FFFFFF;
 }
 
-::ng-deep app-contact-us-btn button {
+::ng-deep app-home-banner app-contact-us-btn button {
     margin: 20px auto !important;
 }
