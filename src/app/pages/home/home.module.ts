@@ -7,6 +7,8 @@ import { PreFooterComponent } from './components/pre-footer/pre-footer.component
 import { OurProjectsComponent } from './components/our-projects/our-projects.component';
 import { OurProjectModalComponent } from 'src/app/common/cards/cards.component';
 import { HomeBannerComponent } from './components/home-banner/home-banner.component';
+import { OurServicesBlockComponent } from './components/our-services-block/our-services-block.component';
+import { OurServicesModalComponent } from 'src/app/common/cards/cards.component';
 
 @NgModule({
   imports: [CommonModule, SharedModule, SFCommonModule],
@@ -17,6 +19,8 @@ import { HomeBannerComponent } from './components/home-banner/home-banner.compon
     OurProjectsComponent,
     OurProjectModalComponent,
     HomeBannerComponent,
+    OurServicesBlockComponent,
+    OurServicesModalComponent,
   ],
 })
 export class HomeModule {}

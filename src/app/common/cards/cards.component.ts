@@ -4,6 +4,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 
 export interface DialogData {
   cards: any;
+  paragraphs: any;
 }
 var videoId: any;
 @Component({
@@ -13,20 +14,33 @@ var videoId: any;
 })
 export class CardsComponent implements OnInit {
   @Input() data: any;
+  @Input() cardType: any;
 
   ngOnInit(): void {}
 
   constructor(public dialog: MatDialog) {}
 
   openDialog(card: any) {
+    
     videoId = card.videoId;
-    this.dialog.open(OurProjectModalComponent, {
-      data: {
-        cards: card.title,
-      },
-      height: '650px',
-      width: '900px',
-    });
+    if(this.cardType == 'projects') {
+      this.dialog.open(OurProjectModalComponent, {
+        data: {
+          cards: card.title,
+        },
+        height: '650px',
+        width: '900px',
+      });
+    } else {
+      this.dialog.open(OurServicesModalComponent, {
+        data: {
+          cards: card.title,
+          paragraphs: card.paragraphs
+        },
+        height: 'auto',
+        width: '900px',
+      });
+    }
   }
 }
 
@@ -45,4 +59,16 @@ export class OurProjectModalComponent {
       `https://www.youtube.com/embed/${videoId}`
     );
   }
+}
+@Component({
+  selector: 'our-services-block-modal',
+  templateUrl:
+    '../../pages/home/components/our-services-block/our-services-block-modal.component.html',
+})
+export class OurServicesModalComponent {
+  safeUrl: any;
+  constructor(
+    @Inject(MAT_DIALOG_DATA) public data: DialogData,
+    public sanitizer: DomSanitizer
+  ) {}
 }
