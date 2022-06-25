@@ -1,20 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OurClientsComponent } from './our-clients.component';
+import { GlobalFooterComponent } from './global-footer.component';
 
-describe('OurClientsComponent', () => {
-  let component: OurClientsComponent;
-  let fixture: ComponentFixture<OurClientsComponent>;
+describe('GlobalFooterComponent', () => {
+  let component: GlobalFooterComponent;
+  let fixture: ComponentFixture<GlobalFooterComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ OurClientsComponent ]
+      declarations: [ GlobalFooterComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(OurClientsComponent);
+    fixture = TestBed.createComponent(GlobalFooterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
