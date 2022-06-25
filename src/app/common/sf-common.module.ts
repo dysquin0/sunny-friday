@@ -7,6 +7,7 @@ import { DefaultComponent } from './default/default.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ContactUsBtnComponent } from './contact-us-btn/contact-us-btn.component';
+import { GlobalFooterComponent } from './global-footer/global-footer.component';
 import { CardsComponent } from './cards/cards.component';
 import { SectionHeaderComponent } from './section-header/section-header.component';
 import { NavigationLinkComponent } from './navigation-link/navigation-link.component';
@@ -17,6 +18,7 @@ import { NavigationLinkComponent } from './navigation-link/navigation-link.compo
     HeaderComponent,
     NavigationComponent,
     ContactUsBtnComponent,
+    GlobalFooterComponent,
     CardsComponent,
     SectionHeaderComponent,
     NavigationLinkComponent,
@@ -26,6 +28,7 @@ import { NavigationLinkComponent } from './navigation-link/navigation-link.compo
     HeaderComponent,
     NavigationComponent,
     ContactUsBtnComponent,
+    GlobalFooterComponent,
     CardsComponent,
     SectionHeaderComponent,
     NavigationLinkComponent,
