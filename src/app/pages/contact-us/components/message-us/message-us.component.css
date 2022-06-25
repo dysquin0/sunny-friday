@@ -1,10 +1,12 @@
 .form-field{
     width: 556px;
     height: 56px;
+    padding-bottom: 24px;
 }
 
 .form-field-textarea{
     width: 556px;
+    padding-bottom: 24px;
 }
 
 .textarea-field{
@@ -30,10 +32,16 @@
     font-weight: bold;
 }
 
-.static-image{
-    width:744px;
+.contact-us-image{
+    width: 1080px;
     height: 522px;
+    max-width: 100%;
+
     position: absolute;
-    top: 208px;
-    left: 768px;
+    right: 0%;
+    top: 32%;
+}
+
+.container.message-us-section{
+    margin-bottom: 56px;
 }

@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { LayoutModule } from '@angular/cdk/layout';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -24,7 +25,8 @@ import { ContactUsModule } from './pages/contact-us/contact-us.module';
     SFCommonModule,
     HomeModule,
     LayoutModule,
-    ContactUsModule
+    ContactUsModule,
+    FormsModule
   ],
   bootstrap: [AppComponent]
 })

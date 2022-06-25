@@ -13,7 +13,7 @@
 
     color: #000000;
 
-    padding: 5px;
+    padding: 8px;
 }
 
 .section-icon{
@@ -23,4 +23,5 @@
 
 .section-details{
     text-indent: 15%;
+    padding-bottom: 32px;
 }
