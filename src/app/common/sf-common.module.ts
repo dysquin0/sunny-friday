@@ -8,29 +8,30 @@ import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ContactUsBtnComponent } from './contact-us-btn/contact-us-btn.component';
 import { GlobalFooterComponent } from './global-footer/global-footer.component';
+import { CardsComponent } from './cards/cards.component';
+import { SectionHeaderComponent } from './section-header/section-header.component';
+import { NavigationLinkComponent } from './navigation-link/navigation-link.component';
 @NgModule({
-    imports: [
-        CommonModule,
-        SharedModule,
-        MaterialModule,
-        AppRoutingModule     
-    ],
-    exports: [
-        DefaultComponent,
-        HeaderComponent,
-        NavigationComponent,
-        ContactUsBtnComponent,
-        GlobalFooterComponent
-    ],
-    declarations: [
-        DefaultComponent,
-        HeaderComponent,
-        NavigationComponent,
-        ContactUsBtnComponent,
-        GlobalFooterComponent
-    ]
+  imports: [CommonModule, SharedModule, MaterialModule, AppRoutingModule],
+  exports: [
+    DefaultComponent,
+    HeaderComponent,
+    NavigationComponent,
+    ContactUsBtnComponent,
+    GlobalFooterComponent,
+    CardsComponent,
+    SectionHeaderComponent,
+    NavigationLinkComponent,
+  ],
+  declarations: [
+    DefaultComponent,
+    HeaderComponent,
+    NavigationComponent,
+    ContactUsBtnComponent,
+    GlobalFooterComponent,
+    CardsComponent,
+    SectionHeaderComponent,
+    NavigationLinkComponent,
+  ],
 })
-
-export class SFCommonModule {
-
-}
+export class SFCommonModule {}

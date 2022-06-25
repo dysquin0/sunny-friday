@@ -1,0 +1,9 @@
+<mat-card
+  *ngFor="let card of data"
+  (click)="openDialog(card)"
+  matRipple
+  class="{{ card.title }}"
+>
+  <img mat-card-image src="{{ card.image }}" />
+  <mat-card-title>{{ card.title }}</mat-card-title>
+</mat-card>
