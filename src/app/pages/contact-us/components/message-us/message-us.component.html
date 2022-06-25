@@ -1,0 +1,39 @@
+<div class="container message-us-section">
+
+    <div class="section-headline-with-description">Contact Us</div>
+    <div class="section-header-description">
+        <p>Want to know more about the good Friday feeling?</p>
+        <p>Then we'd love to hear from you.</p>
+    </div>
+
+    <div dir="ltr">
+        <form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
+            <div>
+                <mat-form-field appearance="outline" class="form-field">
+                    <mat-label>Full Name</mat-label>
+                    <input matInput name="fullName" placeholder="Enter you Full Name" ngModel required>
+                    <mat-error>
+                        {{"This is a required field. Please enter your full name."}}
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="outline" class="form-field">
+                    <mat-label>Email Address</mat-label>
+                    <input matInput name="email" placeholder="Enter your email address" ngModel required>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="outline" class="form-field-textarea">
+                    <mat-label>Message</mat-label>
+                    <textarea class="textarea-field" name="message" matInput placeholder="Enter your message to Sunny Friday" ngModel required></textarea>
+                </mat-form-field>
+            </div>
+            <button mat-raised-button class="submit-button" type="submit" [disabled]="!myform.valid">Submit</button> 
+        </form>
+    </div>
+
+    <div>
+        <img class="contact-us-image" src="assets/images/contact-us-image.png" alt="contact us image">
+    </div>
+</div>
