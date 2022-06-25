@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>{{ data.cards }}</h1>
+<div mat-dialog-content>
+  <div class="description"> 
+    <p>{{ data.paragraphs.p1 }}</p>
+    <p>{{ data.paragraphs.p2 }}</p>
+    <p>{{ data.paragraphs.p3 }}</p>
+    <p>{{ data.paragraphs.p4 }}</p>
+    <p>{{ data.paragraphs.p5 }}</p>
+    <li>{{ data.paragraphs.li1 }}</li>
+    <li>{{ data.paragraphs.li2 }}</li>
+    <li>{{ data.paragraphs.li3 }}</li>
+    <li>{{ data.paragraphs.li4 }}</li>
+  </div>
+</div>
+<mat-dialog-actions align="end">
+  <app-contact-us-btn></app-contact-us-btn>
+  <button style="color: #543287; font-weight: 600" mat-button mat-dialog-close>
+    Close
+  </button>
+</mat-dialog-actions>

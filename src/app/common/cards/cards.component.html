@@ -6,4 +6,5 @@
 >
   <img mat-card-image src="{{ card.image }}" />
   <mat-card-title>{{ card.title }}</mat-card-title>
+  <mat-card-subtitle *ngIf="card?.description">{{ card?.description }}</mat-card-subtitle>
 </mat-card>
