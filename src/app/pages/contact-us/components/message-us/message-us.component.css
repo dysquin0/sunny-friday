@@ -53,6 +53,10 @@
     padding-right: 75px;
 }
 
+.description{
+    margin: 0;
+}
+
 ::ng-deep .mat-focused .mat-form-field-required-marker{
     color: #f44336;
 }
