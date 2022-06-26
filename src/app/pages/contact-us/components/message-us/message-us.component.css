@@ -36,10 +36,11 @@
     font-weight: 800;
 }
 
-.contact-us-image{
+.contact-us-image{  
     width: 100%;
     height: 522px;
-    max-width: 1080px;
+    max-width: 744px;
+    right: 0%;
 
     position: absolute;
 }
@@ -50,7 +51,7 @@
 
 .message-form{
     float: left;
-    padding-right: 75px;
+    padding-right: 24px;
 }
 
 .description{
