@@ -11,5 +11,6 @@ export class FindUsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  title = 'Find Us';
 
 }

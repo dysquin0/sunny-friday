@@ -1,5 +1,7 @@
-<div class="contents">
+<div class="container contents">
   <app-section-header [title]="title"></app-section-header>
-  <app-cards [data]="cards" [cardType]="'projects'"></app-cards>
-  <app-navigation-link [data]="link"></app-navigation-link>
+  <div class="section">
+    <app-cards [data]="cards" [cardType]="'projects'"></app-cards>
+    <app-navigation-link [data]="link"></app-navigation-link>
+  </div>
 </div>
