@@ -30,14 +30,6 @@ export class CardsComponent implements OnInit {
         height: '650px',
         width: '900px',
       });
-    } else if (this.cardType === 'projects-page') {
-      this.dialog.open(OurProjectPageModalComponent, {
-        data: {
-          cards: card.title,
-        },
-        height: '650px',
-        width: '900px',
-      });
     } else {
       this.dialog.open(OurServicesModalComponent, {
         data: {
@@ -48,22 +40,6 @@ export class CardsComponent implements OnInit {
         width: '900px',
       });
     }
-  }
-}
-
-@Component({
-  selector: 'our-project-modal',
-  templateUrl: '../../pages/our-projects/our-project-modal.component.html',
-})
-export class OurProjectPageModalComponent {
-  safeUrl: any;
-  constructor(
-    @Inject(MAT_DIALOG_DATA) public data: DialogData,
-    public sanitizer: DomSanitizer
-  ) {
-    this.safeUrl = sanitizer.bypassSecurityTrustResourceUrl(
-      `https://www.youtube.com/embed/${videoId}`
-    );
   }
 }
 
