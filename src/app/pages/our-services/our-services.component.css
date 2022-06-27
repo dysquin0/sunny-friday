@@ -1,4 +1,4 @@
-::ng-deep app-cards {
+::ng-deep app-our-services app-cards {
     display: inline-flex;
     pointer-events: none;
 }
