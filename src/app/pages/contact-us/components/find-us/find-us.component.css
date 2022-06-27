@@ -1,3 +1,8 @@
+.find-us-section{
+    display: flex;
+    justify-content: center;
+}
+
 .section-label{
     /* SF/Headline 5 */
 
@@ -22,6 +27,20 @@
 }
 
 .section-details{
-    text-indent: 15%;
+    max-width: 43%;
+    padding-left: 31px;
     padding-bottom: 32px;
+}
+
+.office-details{
+    float: left;
+}
+
+.telephone-number{
+    text-decoration: none;
+    color: #543287;
+}
+
+.telephone-number:hover{
+    text-decoration: underline;
 }

@@ -6,7 +6,6 @@
 
 .contents {
     background-color: #fafafa;
-    padding: 20px 0;
 }
 
 ::ng-deep mat-dialog-container {
