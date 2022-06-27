@@ -21,10 +21,17 @@ export class CardsComponent implements OnInit {
   constructor(public dialog: MatDialog) {}
 
   openDialog(card: any) {
-    
     videoId = card.videoId;
-    if(this.cardType == 'projects') {
+    if (this.cardType === 'projects') {
       this.dialog.open(OurProjectModalComponent, {
+        data: {
+          cards: card.title,
+        },
+        height: '650px',
+        width: '900px',
+      });
+    } else if (this.cardType === 'projects-page') {
+      this.dialog.open(OurProjectPageModalComponent, {
         data: {
           cards: card.title,
         },
@@ -35,12 +42,28 @@ export class CardsComponent implements OnInit {
       this.dialog.open(OurServicesModalComponent, {
         data: {
           cards: card.title,
-          paragraphs: card.paragraphs
+          paragraphs: card.paragraphs,
         },
         height: 'auto',
         width: '900px',
       });
     }
+  }
+}
+
+@Component({
+  selector: 'our-project-modal',
+  templateUrl: '../../pages/our-projects/our-project-modal.component.html',
+})
+export class OurProjectPageModalComponent {
+  safeUrl: any;
+  constructor(
+    @Inject(MAT_DIALOG_DATA) public data: DialogData,
+    public sanitizer: DomSanitizer
+  ) {
+    this.safeUrl = sanitizer.bypassSecurityTrustResourceUrl(
+      `https://www.youtube.com/embed/${videoId}`
+    );
   }
 }
 

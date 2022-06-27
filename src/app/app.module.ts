@@ -13,6 +13,7 @@ import { SFCommonModule } from './common/sf-common.module';
 import { HomeModule } from './pages/home/home.module';
 import { ContactUsModule } from './pages/contact-us/contact-us.module';
 import { OurServicesModule } from './pages/our-services/our-services.module';
+import { OurProjectsModule } from './pages/our-projects/our-projects.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -28,6 +29,7 @@ import { OurServicesModule } from './pages/our-services/our-services.module';
     HomeModule,
     ContactUsModule,
     OurServicesModule,
+    OurProjectsModule,
   ],
   bootstrap: [AppComponent],
 })
