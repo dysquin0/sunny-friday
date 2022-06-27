@@ -1,0 +1,9 @@
+::ng-deep app-cards {
+    display: inline-flex;
+    pointer-events: none;
+}
+
+.section-header-description {
+    width: 66%;
+    margin: 0 auto;
+}
