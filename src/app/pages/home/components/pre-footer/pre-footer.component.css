@@ -1,9 +1,11 @@
-.container {
+.wrapper {
     position: relative;
 }
 
 img {
     filter: brightness(50%);
+    width: 100%;
+    margin: 0 !important;
 }
 
 .overlapping-contents {
