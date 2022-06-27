@@ -11,7 +11,7 @@ import { SharedModule } from './shared/shared.module';
 import { SFCommonModule } from './common/sf-common.module';
 import { HomeModule } from './pages/home/home.module';
 import { ContactUsModule } from './pages/contact-us/contact-us.module';
-
+import { AboutUsModule } from './pages/about-us/about-us.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +26,8 @@ import { ContactUsModule } from './pages/contact-us/contact-us.module';
     HomeModule,
     LayoutModule,
     ContactUsModule,
-    FormsModule
+    FormsModule,
+    AboutUsModule
   ],
   bootstrap: [AppComponent]
 })
