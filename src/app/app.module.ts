@@ -17,6 +17,7 @@ import { OurServicesModule } from './pages/our-services/our-services.module';
 import { OurProjectsModule } from './pages/our-projects/our-projects.module';
 import { WorkWithUsModule } from './pages/work-with-us/work-with-us.module';
 import { WorkWithUsPaginatorIntl } from './pages/work-with-us/work-with-us-paginator-intl';
+import { AboutUsModule } from './pages/about-us/about-us.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -34,6 +35,7 @@ import { WorkWithUsPaginatorIntl } from './pages/work-with-us/work-with-us-pagin
     OurServicesModule,
     OurProjectsModule,
     WorkWithUsModule,
+    AboutUsModule,
   ],
   bootstrap: [AppComponent],
   providers: [{
