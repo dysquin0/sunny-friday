@@ -1,10 +1,12 @@
 ::ng-deep app-our-projects app-cards {
     display: inline-flex;
+    padding-bottom: 40px;
 }
 
 .section-header-description {
-    width: 66%;
+    width: 50%;
     margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 ::ng-deep mat-dialog-container {
@@ -47,4 +49,8 @@
 
 ::ng-deep app-our-projects .mat-card {
     height: unset !important;
+}
+
+.wrapper {
+    text-align: center;
 }
