@@ -11,6 +11,7 @@ import { GlobalFooterComponent } from './global-footer/global-footer.component';
 import { CardsComponent } from './cards/cards.component';
 import { SectionHeaderComponent } from './section-header/section-header.component';
 import { NavigationLinkComponent } from './navigation-link/navigation-link.component';
+import { TranslationComponent } from './translation/translation.component';
 @NgModule({
   imports: [CommonModule, SharedModule, MaterialModule, AppRoutingModule],
   exports: [
@@ -32,6 +33,7 @@ import { NavigationLinkComponent } from './navigation-link/navigation-link.compo
     CardsComponent,
     SectionHeaderComponent,
     NavigationLinkComponent,
+    TranslationComponent,
   ],
 })
 export class SFCommonModule {}

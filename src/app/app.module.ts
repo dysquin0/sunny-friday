@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { SFCommonModule } from './common/sf-common.module';
+
+import { L10nTranslationModule, L10nIntlModule } from 'angular-l10n';
+import { l10nConfig } from '../assets/translation/l10n-config';
+
 import { HomeModule } from './pages/home/home.module';
 import { ContactUsModule } from './pages/contact-us/contact-us.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -23,11 +25,13 @@ import { ContactUsModule } from './pages/contact-us/contact-us.module';
     SharedModule,
     HttpClientModule,
     SFCommonModule,
-    HomeModule,
     LayoutModule,
+    FormsModule,
+    HomeModule,
     ContactUsModule,
-    FormsModule
+    L10nTranslationModule.forRoot(l10nConfig),
+    L10nIntlModule,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

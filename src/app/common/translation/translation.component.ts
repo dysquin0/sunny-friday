@@ -7,13 +7,13 @@ import {
   L10nTranslationService,
 } from 'angular-l10n';
 import { L10nSchema } from 'angular-l10n/lib/models/types';
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'app-translation',
+  templateUrl: './translation.component.html',
+  styleUrls: ['./translation.component.css'],
 })
-export class AppComponent implements OnInit {
-  title = 'sunny-friday';
+export class TranslationComponent implements OnInit {
   schema: L10nSchema[] | undefined;
 
   constructor(
