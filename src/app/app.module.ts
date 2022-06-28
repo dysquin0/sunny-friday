@@ -14,7 +14,7 @@ import { HomeModule } from './pages/home/home.module';
 import { ContactUsModule } from './pages/contact-us/contact-us.module';
 import { OurServicesModule } from './pages/our-services/our-services.module';
 import { OurProjectsModule } from './pages/our-projects/our-projects.module';
-
+import { AboutUsModule } from './pages/about-us/about-us.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -30,6 +30,7 @@ import { OurProjectsModule } from './pages/our-projects/our-projects.module';
     ContactUsModule,
     OurServicesModule,
     OurProjectsModule,
+    AboutUsModule
   ],
   bootstrap: [AppComponent],
 })
