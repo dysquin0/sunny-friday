@@ -21,9 +21,8 @@ export class CardsComponent implements OnInit {
   constructor(public dialog: MatDialog) {}
 
   openDialog(card: any) {
-    
     videoId = card.videoId;
-    if(this.cardType == 'projects') {
+    if (this.cardType === 'projects') {
       this.dialog.open(OurProjectModalComponent, {
         data: {
           cards: card.title,
@@ -35,7 +34,7 @@ export class CardsComponent implements OnInit {
       this.dialog.open(OurServicesModalComponent, {
         data: {
           cards: card.title,
-          paragraphs: card.paragraphs
+          paragraphs: card.paragraphs,
         },
         height: 'auto',
         width: '900px',

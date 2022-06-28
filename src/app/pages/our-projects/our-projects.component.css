@@ -1,12 +1,12 @@
-::ng-deep app-cards {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 36px;
+::ng-deep app-our-projects app-cards {
+    display: inline-flex;
+    padding-bottom: 40px;
 }
 
-.contents {
-    background-color: #fafafa;
+.section-header-description {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 ::ng-deep mat-dialog-container {
@@ -15,6 +15,12 @@
 
 ::ng-deep mat-dialog-actions {
     padding: 20px 0 !important;
+}
+
+::ng-deep our-project-modal h1.mat-dialog-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
 }
 
 ::ng-deep our-project-modal h1.mat-dialog-title {
@@ -45,6 +51,6 @@
     height: unset !important;
 }
 
-::ng-deep app-our-projects .section {
-    padding-bottom: 56px;
+.wrapper {
+    text-align: center;
 }

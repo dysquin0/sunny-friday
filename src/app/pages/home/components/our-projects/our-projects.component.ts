@@ -10,7 +10,7 @@ export class OurProjectsComponent implements OnInit {
   title = 'Our projects';
   link = {
     label: 'See More',
-    link: '/our-services',
+    link: '/our-projects',
   };
   cards = [
     {
