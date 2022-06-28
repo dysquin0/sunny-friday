@@ -9,13 +9,13 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { SFCommonModule } from './common/sf-common.module';
+
 import { HomeModule } from './pages/home/home.module';
 import { ContactUsModule } from './pages/contact-us/contact-us.module';
+import { OurServicesModule } from './pages/our-services/our-services.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -23,11 +23,12 @@ import { ContactUsModule } from './pages/contact-us/contact-us.module';
     SharedModule,
     HttpClientModule,
     SFCommonModule,
-    HomeModule,
     LayoutModule,
+    FormsModule,
+    HomeModule,
     ContactUsModule,
-    FormsModule
+    OurServicesModule,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

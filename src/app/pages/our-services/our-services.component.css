@@ -1,0 +1,40 @@
+::ng-deep app-our-services app-cards {
+    display: inline-flex;
+}
+
+.section-header-description {
+    width: 66%;
+    margin: 0 auto;
+}
+
+::ng-deep  app-cards#our-services-cards mat-card{
+    width: 360px;
+    height: 520px;
+    background: #FFFFFF;
+    border-radius: 0 !important;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: none;  
+}
+::ng-deep  app-cards#our-services-cards mat-card-title{
+    margin-top: 16px;
+}
+::ng-deep app-cards#our-services-cards mat-card-subtitle {
+    margin-top: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;  
+    letter-spacing: 0.25px;
+}
+::ng-deep our-services-block-modal h1.mat-dialog-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+}
+::ng-deep our-services-block-modal p,::ng-deep our-services-block-modal li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}

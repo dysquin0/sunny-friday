@@ -24,8 +24,7 @@
 
 ::ng-deep .videoWrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
+    padding-bottom: 56.25%; 
     height: 0;
 }
 
@@ -39,4 +38,8 @@
 
 ::ng-deep our-project-modal app-contact-us-btn button {
     margin-right: 30px !important;
+}
+
+::ng-deep app-our-projects .mat-card {
+    height: unset !important;
 }
