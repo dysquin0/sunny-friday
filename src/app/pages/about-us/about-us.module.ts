@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../../shared/shared.module';
 import { SFCommonModule } from '../../common/sf-common.module';
 import { OurValuesComponent } from './components/our-values/our-values.component';
+import { AboutUsSectionComponent } from './components/about-us-section/about-us-section.component';
 
 @NgModule({
     imports: [
@@ -16,7 +17,8 @@ import { OurValuesComponent } from './components/our-values/our-values.component
     ],
     declarations: [
         AboutUsComponent,
-        OurValuesComponent
+        OurValuesComponent,
+        AboutUsSectionComponent
         
     ]
 })
