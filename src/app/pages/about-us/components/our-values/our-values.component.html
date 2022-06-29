@@ -1,0 +1,16 @@
+<div class="mat-app-background container">
+    <app-section-header [title]="title"></app-section-header>
+    <div class="values-container-1">
+        <div class="img-desc-container" *ngFor="let item of values | slice:0:4;">
+            <img src={{item.image}} />
+            <div class="values-desc">{{item.description}}</div>
+        </div>     
+    </div>
+    <div class="values-container-2">
+        <div class="img-desc-container" *ngFor="let item of values  | slice: -2 ">
+            <img src={{item.image}} />
+            <div class="values-desc">{{item.description}}</div>
+        </div>     
+    </div>
+</div>
+    

@@ -1,0 +1,38 @@
+
+.values-container-1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 95px 100px 64px 100px;
+
+}
+.values-container-2 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-left: 29%;
+}
+.values-container-2 .values-desc {
+    width: 250px;
+}
+.img-desc-container {
+    display: flex;
+    flex-direction: column;
+    width: 268px;
+    align-items: center;
+}
+img {
+    height: 120px;
+    width: 120px;
+    margin-bottom: 16px;
+}
+.values-desc {
+    width: 260px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}

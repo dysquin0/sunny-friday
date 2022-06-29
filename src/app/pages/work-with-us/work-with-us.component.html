@@ -1,1 +1,40 @@
-<p>work-with-us works!</p>
+<div class="container">
+    <app-section-header [title]="title"></app-section-header>
+    <div class="work-with-us-section section">
+        <div class="work-with-us-image">
+            <img src="assets/images/work-with-us.png" alt="work with us image">
+        </div>  
+        <div class="job-table-section section">
+            <table mat-table [dataSource]="dataSource">
+          
+              <!-- Job Column -->
+              <ng-container matColumnDef="job">
+                <th mat-header-cell *matHeaderCellDef> Job </th>
+                <td mat-cell *matCellDef="let job"> {{job.job}} </td>
+              </ng-container>
+          
+              <!-- Department Column -->
+              <ng-container matColumnDef="department">
+                <th mat-header-cell *matHeaderCellDef> Department </th>
+                <td mat-cell *matCellDef="let job"> {{job.department}} </td>
+              </ng-container>
+          
+              <!-- Location Column -->
+              <ng-container matColumnDef="location">
+                <th mat-header-cell *matHeaderCellDef> Location </th>
+                <td mat-cell *matCellDef="let job"> {{job.location}} </td>
+              </ng-container>
+          
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+          
+            <mat-paginator [length]="length"
+                           [pageSize]="pageSize" 
+                           [pageSizeOptions]="pageSizeOptions"
+                           showFirstLastButtons 
+                           aria-label="Select page of Jobs">
+            </mat-paginator>
+          </div>
+    </div>
+</div>
