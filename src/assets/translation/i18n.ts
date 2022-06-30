@@ -1,31 +1,39 @@
 export const i18nAsset = {
   'en-US': {
     changeLocale: 'Change locale',
-    home: {
-      title: 'Angular localization',
-      subtitle: 'The world is small',
-      greeting: 'Hello world!',
-      whoIAm: 'I am {{name}}',
-      description:
-        '<em>An Angular library to translate texts, dates and numbers</em>',
-      devs: {
-        one: 'One software developer',
-        other: '{{ value }} software developers',
+    navigation: {
+      home: 'Home',
+      ourServices: 'Our Services',
+      aboutUs: 'About Us',
+      workWithUs: 'Work with Us',
+    },
+    common: {
+      contactUs: 'Contact Us',
+    },
+    homePage: {
+      banner: {
+        header: "Let's make you shine!",
+        paragraph:
+          'We were really tired of long, costly and inefficient processes. Basically, the inside of the meeting room. Convinced that good communication could be made easier and not least more affordable, we made SunnyFriday – a slightly different media agency.',
       },
     },
   },
-  'it-IT': {
-    changeLocale: 'Cambia località',
-    home: {
-      title: 'Localizzazione in Angular',
-      subtitle: 'Il mondo è piccolo',
-      greeting: 'Ciao mondo!',
-      whoIAm: 'Sono {{name}}',
-      description:
-        '<em>Una libreria Angular per tradurre testi, date e numeri</em>',
-      devs: {
-        one: 'Uno sviluppatore software',
-        other: '{{ value }} sviluppatori software',
+  'nb-NO': {
+    changeLocale: 'Endre lokalitet',
+    navigation: {
+      home: 'Hjem',
+      ourServices: 'Våre tjenester',
+      aboutUs: 'Om oss',
+      workWithUs: 'Jobb med oss',
+    },
+    common: {
+      contactUs: 'Kontakt oss',
+    },
+    homePage: {
+      banner: {
+        header: 'La oss få deg til å skinne!',
+        paragraph:
+          'Vi var virkelig lei av lange, kostbare og ineffektive prosesser. I utgangspunktet innsiden av møterommet. Overbevist om at god kommunikasjon kunne gjøres enklere og ikke minst rimeligere, gjorde vi SunnyFriday – et litt annerledes mediebyrå.',
       },
     },
   },

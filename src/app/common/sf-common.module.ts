@@ -13,8 +13,17 @@ import { SectionHeaderComponent } from './section-header/section-header.componen
 import { NavigationLinkComponent } from './navigation-link/navigation-link.component';
 import { TranslationComponent } from './translation/translation.component';
 import { PreFooterComponent } from './pre-footer/pre-footer.component';
+import { L10nTranslationModule, L10nIntlModule } from 'angular-l10n';
+import { l10nConfig } from '../../assets/translation/l10n-config';
 @NgModule({
-  imports: [CommonModule, SharedModule, MaterialModule, AppRoutingModule],
+  imports: [
+    CommonModule,
+    SharedModule,
+    MaterialModule,
+    AppRoutingModule,
+    L10nTranslationModule.forRoot(l10nConfig),
+    L10nIntlModule,
+  ],
   exports: [
     DefaultComponent,
     HeaderComponent,
@@ -24,6 +33,7 @@ import { PreFooterComponent } from './pre-footer/pre-footer.component';
     CardsComponent,
     SectionHeaderComponent,
     NavigationLinkComponent,
+    TranslationComponent,
     PreFooterComponent,
   ],
   declarations: [

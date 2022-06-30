@@ -6,9 +6,6 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { FormsModule } from '@angular/forms';
 import { MatPaginatorIntl } from '@angular/material/paginator';
 
-import { L10nTranslationModule, L10nIntlModule } from 'angular-l10n';
-import { l10nConfig } from '../assets/translation/l10n-config';
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
@@ -39,8 +36,6 @@ import { AboutUsModule } from './pages/about-us/about-us.module';
     OurProjectsModule,
     WorkWithUsModule,
     AboutUsModule,
-    L10nTranslationModule.forRoot(l10nConfig),
-    L10nIntlModule,
   ],
   bootstrap: [AppComponent],
 

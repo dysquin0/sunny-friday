@@ -1,5 +1,4 @@
 import { L10nConfig } from 'angular-l10n';
-
 import { i18nAsset } from './i18n';
 
 export const l10nConfig: L10nConfig = {
@@ -26,13 +25,13 @@ export const l10nConfig: L10nConfig = {
     },
     {
       locale: {
-        language: 'it-IT',
-        currency: 'EUR',
+        language: 'nb-NO',
+        currency: 'NOK',
         timeZone: 'Europe/Rome',
         units: { length: 'kilometer' },
       },
       dir: 'ltr',
-      text: 'Italia',
+      text: 'Norway',
     },
   ],
 };

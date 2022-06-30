@@ -1,4 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
+import { L10nSchema } from 'angular-l10n/lib/models/types';
 import {
   L10N_CONFIG,
   L10nConfig,
@@ -6,7 +7,6 @@ import {
   L10nLocale,
   L10nTranslationService,
 } from 'angular-l10n';
-import { L10nSchema } from 'angular-l10n/lib/models/types';
 
 @Component({
   selector: 'app-translation',
