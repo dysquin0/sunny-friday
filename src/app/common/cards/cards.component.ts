@@ -30,7 +30,8 @@ export class CardsComponent implements OnInit {
         height: '650px',
         width: '900px',
       });
-    } else {
+    } 
+    else if (this.cardType === 'services'){
       this.dialog.open(OurServicesModalComponent, {
         data: {
           cards: card.title,

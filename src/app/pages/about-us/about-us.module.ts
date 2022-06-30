@@ -5,6 +5,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { SFCommonModule } from '../../common/sf-common.module';
 import { OurValuesComponent } from './components/our-values/our-values.component';
 import { AboutUsSectionComponent } from './components/about-us-section/about-us-section.component';
+import { MeetTheTeamComponent } from './components/meet-the-team/meet-the-team.component';
 
 @NgModule({
     imports: [
@@ -18,7 +19,8 @@ import { AboutUsSectionComponent } from './components/about-us-section/about-us-
     declarations: [
         AboutUsComponent,
         OurValuesComponent,
-        AboutUsSectionComponent
+        AboutUsSectionComponent,
+        MeetTheTeamComponent
         
     ]
 })
