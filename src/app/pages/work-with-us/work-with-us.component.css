@@ -3,6 +3,7 @@
     height: 100%;
     max-width: 1128px;
     max-height: 200px;
+    margin: 0 auto;
 }
 
 .mat-header-cell{
@@ -27,6 +28,7 @@ tr.mat-row:hover{
     flex-direction: column;
     width: 100%;
     max-width: 1128px;
+    margin: 0 auto;
 }
 
 ::ng-deep .mat-paginator-range-actions{
