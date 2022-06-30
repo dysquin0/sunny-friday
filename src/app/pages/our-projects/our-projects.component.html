@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper container">
   <app-section-header [title]="title"></app-section-header>
   <div class="section-header-description">
     <p class="description">
@@ -9,6 +9,10 @@
   </div>
   <app-cards [data]="rowOne" [cardType]="'projects'"></app-cards>
   <app-cards [data]="rowTwo" [cardType]="'projects'"></app-cards>
-  <app-cards [data]="rowThree" [cardType]="'projects'"></app-cards>
+  <app-cards
+    [data]="rowThree"
+    [cardType]="'projects'"
+    style="padding-bottom: 0"
+  ></app-cards>
 </div>
 <app-pre-footer></app-pre-footer>

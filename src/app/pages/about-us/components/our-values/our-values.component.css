@@ -1,17 +1,19 @@
 
-.values-container-1 {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    margin: 95px 100px 64px 100px;
-
-}
+.values-container-1,
 .values-container-2 {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
-    margin-left: 29%;
+    justify-content: center;
+    margin: 95px 100px 64px 100px;
+
 }
+
+.values-container-1 {
+    margin: 95px 100px 64px 100px;
+
+}
+
 .values-container-2 .values-desc {
     width: 250px;
 }

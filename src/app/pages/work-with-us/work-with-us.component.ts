@@ -1,14 +1,14 @@
-import { Component, OnInit, Injectable } from '@angular/core';
+import { Component, OnInit, Injectable, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
+import { MatPaginator } from '@angular/material/paginator';
 
 @Component({
   selector: 'app-work-with-us',
   templateUrl: './work-with-us.component.html',
-  styleUrls: ['./work-with-us.component.css']
+  styleUrls: ['./work-with-us.component.css'],
 })
 @Injectable()
 export class WorkWithUsComponent implements OnInit {
-
   constructor() {}
 
   ngOnInit(): void {}
@@ -20,8 +20,17 @@ export class WorkWithUsComponent implements OnInit {
   displayedColumns: string[] = ['job', 'department', 'location'];
   dataSource = new MatTableDataSource<JobDetails>(JOB_DATA);
 
+  @ViewChild(MatPaginator)
+  paginator!: MatPaginator;
+
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
+  }
+
   setPageSizeOptions(setPageSizeOptionsInput: string) {
-    this.pageSizeOptions = setPageSizeOptionsInput.split(',').map(str => +str);
+    this.pageSizeOptions = setPageSizeOptionsInput
+      .split(',')
+      .map((str) => +str);
   }
 }
 
@@ -32,16 +41,88 @@ export interface JobDetails {
 }
 
 const JOB_DATA: JobDetails[] = [
-  {job: 'Senior Art Director', department: 'Design', location: 'Bergen, Vestland, Norway'},
-  {job: 'Senior Copywriter', department: 'Design', location: 'Remote'},
-  {job: 'Art Director', department: 'Design', location: 'Bergen, Vestland, Norway'},
-  {job: 'Account Manager', department: 'Administration', location: 'Bergen, Vestland, Norway'},
-  {job: 'Account Director', department: 'Administration', location: 'Bergen, Vestland, Norway'},
-  {job: 'Senior Film Producer', department: 'Design', location: 'Bergen, Vestland, Norway'},
-  {job: 'Senior Art Director', department: 'Design', location: 'Bergen, Vestland, Norway'},
-  {job: 'Group Communications Strategy Director', department: 'Marketing and Communications', location: 'Bergen, Vestland, Norway'},
-  {job: 'Design Director', department: 'Design', location: 'Remote'},
-  {job: 'Senior Data Strategist', department: 'Marketing and Communications', location: 'Bergen, Vestland, Norway'},
+  {
+    job: 'Senior Art Director',
+    department: 'Design',
+    location: 'Bergen, Vestland, Norway',
+  },
+  { job: 'Senior Copywriter', department: 'Design', location: 'Remote' },
+  {
+    job: 'Art Director',
+    department: 'Design',
+    location: 'Bergen, Vestland, Norway',
+  },
+  {
+    job: 'Account Manager',
+    department: 'Administration',
+    location: 'Bergen, Vestland, Norway',
+  },
+  {
+    job: 'Account Director',
+    department: 'Administration',
+    location: 'Bergen, Vestland, Norway',
+  },
+  {
+    job: 'Senior Film Producer',
+    department: 'Design',
+    location: 'Bergen, Vestland, Norway',
+  },
+  {
+    job: 'Senior Art Director',
+    department: 'Design',
+    location: 'Bergen, Vestland, Norway',
+  },
+  {
+    job: 'Group Communications Strategy Director',
+    department: 'Marketing and Communications',
+    location: 'Bergen, Vestland, Norway',
+  },
+  { job: 'Design Director', department: 'Design', location: 'Remote' },
+  {
+    job: 'Senior Data Strategist',
+    department: 'Marketing and Communications',
+    location: 'Bergen, Vestland, Norway',
+  },
+  {
+    job: 'Senior Art Director',
+    department: 'Design',
+    location: 'Bergen, Vestland, Norway',
+  },
+  { job: 'Senior Copywriter', department: 'Design', location: 'Remote' },
+  {
+    job: 'Art Director',
+    department: 'Design',
+    location: 'Bergen, Vestland, Norway',
+  },
+  {
+    job: 'Account Manager',
+    department: 'Administration',
+    location: 'Bergen, Vestland, Norway',
+  },
+  {
+    job: 'Account Director',
+    department: 'Administration',
+    location: 'Bergen, Vestland, Norway',
+  },
+  {
+    job: 'Senior Film Producer',
+    department: 'Design',
+    location: 'Bergen, Vestland, Norway',
+  },
+  {
+    job: 'Senior Art Director',
+    department: 'Design',
+    location: 'Bergen, Vestland, Norway',
+  },
+  {
+    job: 'Group Communications Strategy Director',
+    department: 'Marketing and Communications',
+    location: 'Bergen, Vestland, Norway',
+  },
+  { job: 'Design Director', department: 'Design', location: 'Remote' },
+  {
+    job: 'Senior Data Strategist',
+    department: 'Marketing and Communications',
+    location: 'Bergen, Vestland, Norway',
+  },
 ];
-
-

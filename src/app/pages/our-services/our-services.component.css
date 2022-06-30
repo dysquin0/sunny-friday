@@ -1,10 +1,16 @@
 ::ng-deep app-our-services app-cards {
     display: inline-flex;
+    padding-bottom: 40px;
+}
+
+.container {
+    text-align: center;
 }
 
 .section-header-description {
     width: 66%;
     margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 ::ng-deep  app-cards#our-services-cards mat-card{
