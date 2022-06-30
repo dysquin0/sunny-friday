@@ -1,0 +1,36 @@
+.work-with-us-image{  
+    width: 100%;
+    height: 100%;
+    max-width: 1128px;
+    max-height: 200px;
+    margin: 0 auto;
+}
+
+.mat-header-cell{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    border-width: 2px;
+    border-color: #808080;
+}
+
+td.mat-cell{
+    border-color: #808080;
+}
+
+tr.mat-row:hover{
+    background-color: #EEEBF3;
+}
+
+.job-table-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+::ng-deep .mat-paginator-range-actions{
+    margin-left: auto;
+}
