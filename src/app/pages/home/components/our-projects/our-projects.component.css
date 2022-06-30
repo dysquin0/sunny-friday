@@ -7,6 +7,7 @@
 
 .contents {
     background-color: #fafafa;
+    padding: 56px 0;
 }
 
 ::ng-deep mat-dialog-container {
@@ -43,8 +44,4 @@
 
 ::ng-deep app-our-projects .mat-card {
     height: unset !important;
-}
-
-::ng-deep app-our-projects .section {
-    padding-bottom: 56px;
 }
