@@ -93,6 +93,37 @@ export const i18nAsset = {
         },
       },
     },
+    contactUsPage: {
+      findUs: {
+        header: 'Find Us',
+        headquarters: 'Headquarters',
+        telephone: 'Telephone',
+      },
+      messageUs: {
+        header: 'Contact Us',
+        paragraph: {
+          p1: 'Want to know more about the good Friday feeling?',
+          p2: "Then we'd love to hear from you.",
+        },
+        form: {
+          fullName: 'Full Name',
+          emailAddress: 'Email Address',
+          message: 'Message',
+          submit: 'Submit',
+        },
+        placeholders: {
+          fullName: 'Enter you Full Name',
+          emailAddress: 'Enter your email address',
+          message: 'Enter your message to Sunny Friday',
+        },
+        formErrors: {
+          fullName: 'This is a required field. Please enter your full name.',
+          emailAddress:
+            'This is a required field. Please enter your email address.',
+          message: 'This is a required field. Please enter your message.',
+        },
+      },
+    },
   },
   'nb-NO': {
     changeLocale: 'Endre lokalitet',
@@ -185,6 +216,38 @@ export const i18nAsset = {
           card3: {
             header: 'Musikkvideo',
           },
+        },
+      },
+    },
+    contactUsPage: {
+      findUs: {
+        header: 'Finn oss',
+        headquarters: 'Hovedkvarter',
+        telephone: 'Telefon',
+      },
+      messageUs: {
+        header: 'Kontakt oss',
+        paragraph: {
+          p1: 'Vil du vite mer om den gode fredagsfølelsen?',
+          p2: 'Da vil vi gjerne høre fra deg.',
+        },
+        form: {
+          fullName: 'Fullt navn',
+          emailAddress: 'Epostadresse',
+          message: 'Beskjed',
+          submit: 'Sende inn',
+        },
+        placeholders: {
+          fullName: 'Skriv inn ditt fulle navn',
+          emailAddress: 'Skriv inn email adressen din',
+          message: 'Skriv inn meldingen din til Sunny Friday',
+        },
+        formErrors: {
+          fullName:
+            'Dette er et obligatorisk felt. Vennligst oppgi ditt fulle navn.',
+          emailAddress:
+            'Dette er et obligatorisk felt. Vennligst skriv inn E-postadressen din.',
+          message: 'Dette er et obligatorisk felt. Skriv inn meldingen din.',
         },
       },
     },
