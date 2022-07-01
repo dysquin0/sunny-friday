@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { L10nLocale, L10nTranslationService } from 'angular-l10n';
 @Component({
   selector: 'app-contact-us-btn',
