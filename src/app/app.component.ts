@@ -1,4 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { L10nSchema } from 'angular-l10n/lib/models/types';
 import {
   L10N_CONFIG,
   L10nConfig,
@@ -6,7 +8,7 @@ import {
   L10nLocale,
   L10nTranslationService,
 } from 'angular-l10n';
-import { L10nSchema } from 'angular-l10n/lib/models/types';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -19,7 +21,8 @@ export class AppComponent implements OnInit {
   constructor(
     @Inject(L10N_LOCALE) public locale: L10nLocale,
     @Inject(L10N_CONFIG) private l10nConfig: L10nConfig,
-    private translation: L10nTranslationService
+    private translation: L10nTranslationService,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -31,10 +34,18 @@ export class AppComponent implements OnInit {
         console.log(this.translation.data);
       },
     });
+
     this.translation.onError().subscribe({
       next: (error: any) => {
         if (error) console.log(error);
       },
+    });
+
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
     });
   }
 

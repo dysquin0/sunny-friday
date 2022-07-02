@@ -1,6 +1,7 @@
 ::ng-deep app-our-services app-cards {
     display: inline-flex;
     padding-bottom: 40px;
+    width: -webkit-fill-available;
 }
 
 .container {
