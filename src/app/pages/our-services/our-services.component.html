@@ -1,1 +1,18 @@
-<p>our-services works!</p>
+<div class="container">
+  <app-section-header [title]="title"></app-section-header>
+  <div class="section-header-description">
+    <p class="description">
+      Working with us should be effortless, effective and fun. The most
+      important thing for us is to have fun first, money comes second. Because
+      if you don’t have fun, you won’t earn any money.
+    </p>
+  </div>
+  <app-cards [data]="rowOne" [cardType]="'services'"></app-cards>
+  <app-cards [data]="rowTwo" [cardType]="'services'"></app-cards>
+  <app-cards
+    [data]="rowThree"
+    [cardType]="'services'"
+    style="padding-bottom: 0"
+  ></app-cards>
+</div>
+<app-pre-footer></app-pre-footer>
