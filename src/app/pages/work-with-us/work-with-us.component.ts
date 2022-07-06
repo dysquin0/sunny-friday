@@ -1,6 +1,7 @@
 import { Component, OnInit, Injectable, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { L10nLocale, L10nTranslationService } from 'angular-l10n';
 
 @Component({
   selector: 'app-work-with-us',
@@ -9,16 +10,34 @@ import { MatPaginator } from '@angular/material/paginator';
 })
 @Injectable()
 export class WorkWithUsComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-
-  title = 'Work with us';
+  title: any;
   length = 100;
   pageSize = 10;
   pageSizeOptions: number[] = [5, 10, 25, 100];
   displayedColumns: string[] = ['job', 'department', 'location'];
   dataSource = new MatTableDataSource<JobDetails>(JOB_DATA);
+
+  jobHeader: any;
+  deptHeader: any;
+  locationHeader: any;
+
+  constructor(private translation: L10nTranslationService) {}
+  ngOnInit(): void {
+    this.translation.onChange().subscribe({
+      next: (locale: L10nLocale) => {
+        this.title = this.translation.translate('navigation.workWithUs');
+        this.jobHeader = this.translation.translate(
+          'workWithUsPage.table.header1'
+        );
+        this.deptHeader = this.translation.translate(
+          'workWithUsPage.table.header2'
+        );
+        this.locationHeader = this.translation.translate(
+          'workWithUsPage.table.header3'
+        );
+      },
+    });
+  }
 
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
