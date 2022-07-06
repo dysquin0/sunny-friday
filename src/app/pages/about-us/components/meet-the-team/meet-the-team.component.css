@@ -4,6 +4,10 @@
     width: -webkit-fill-available;
 }
 
+::ng-deep .meet-the-team-section app-cards:last-child{
+    padding-bottom: 0;
+}
+
 ::ng-deep .meet-the-team-section .mat-card .mat-card-image{
     position: absolute;
     width: 78px;
