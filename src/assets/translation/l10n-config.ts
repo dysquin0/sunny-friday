@@ -21,17 +21,17 @@ export const l10nConfig: L10nConfig = {
         units: { length: 'mile' },
       },
       dir: 'ltr',
-      text: 'United States',
+      text: '../../../assets/svg/united-states.svg',
     },
     {
       locale: {
         language: 'nb-NO',
         currency: 'NOK',
-        timeZone: 'Europe/Rome',
+        timeZone: 'Europe/Norway',
         units: { length: 'kilometer' },
       },
       dir: 'ltr',
-      text: 'Norway',
+      text: '../../../assets/svg/norway.svg',
     },
   ],
 };

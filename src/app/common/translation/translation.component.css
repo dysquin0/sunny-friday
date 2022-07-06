@@ -1,0 +1,28 @@
+.mat-form-field {
+    width: 40%;
+    float: right;
+}
+
+::ng-deep .mat-form-field-underline {
+    display: none;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: unset;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-infix {
+    padding: 0.5em 0;
+}
+
+::ng-deep .mat-select-arrow-wrapper {
+    height: 0 !important;
+}
+
+::ng-deep .mat-select-panel-wrap .mat-select-panel {
+    font-size: initial !important;
+}
+
+::ng-deep .mat-option-text {
+    display: flex !important;
+}

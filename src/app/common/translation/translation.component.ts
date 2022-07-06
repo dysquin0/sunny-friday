@@ -15,6 +15,11 @@ import {
 })
 export class TranslationComponent implements OnInit {
   schema: L10nSchema[] | undefined;
+  selected: any;
+  flag: any;
+
+  english: any;
+  norwegianBokmal: any;
 
   constructor(
     @Inject(L10N_LOCALE) public locale: L10nLocale,
@@ -24,21 +29,18 @@ export class TranslationComponent implements OnInit {
 
   ngOnInit() {
     this.schema = this.l10nConfig.schema;
+    this.selected = this.schema[0].locale;
+    this.flag = this.schema[0].text;
 
-    this.translation.onChange().subscribe({
-      next: (locale: L10nLocale) => {
-        console.log(locale);
-        console.log(this.translation.data);
-      },
-    });
-    this.translation.onError().subscribe({
-      next: (error: any) => {
-        if (error) console.log(error);
-      },
-    });
+    this.english = this.schema[0];
+    this.norwegianBokmal = this.schema[1];
   }
 
   setLocale(locale: L10nLocale): void {
     this.translation.setLocale(locale);
+    this.flag =
+      locale.language === 'en-US'
+        ? '../../../assets/svg/united-states.svg'
+        : '../../../assets/svg/norway.svg';
   }
 }
