@@ -1,4 +1,4 @@
-.contact-us-btn{
+button.contact-us-btn{
     border-radius: 4em;
     background: #F3AC1D;
     display: flex;
@@ -10,8 +10,9 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 20px;
+    box-shadow: none;
 }
-.contact-us-btn:hover {
+button.contact-us-btn:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     transition: all .55s ease-in-out;
 }
