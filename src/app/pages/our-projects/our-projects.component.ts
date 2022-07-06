@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { L10nLocale, L10nTranslationService } from 'angular-l10n';
 
 @Component({
   selector: 'app-our-projects',
@@ -6,62 +7,92 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./our-projects.component.css'],
 })
 export class OurProjectsComponent implements OnInit {
-  constructor() {}
+  title: string | undefined;
+  description: any;
+  rowOne: any;
+  rowTwo: any;
+  rowThree: any;
 
-  ngOnInit(): void {}
+  constructor(private translation: L10nTranslationService) {}
+  ngOnInit(): void {
+    this.translation.onChange().subscribe({
+      next: (locale: L10nLocale) => {
+        this.title = this.translation.translate('navigation.ourProjects');
+        this.description = this.translation.translate(
+          'ourProjectsPage.description'
+        );
+        this.rowOne = [
+          {
+            image: '../../../../../assets/images/advertisement.png',
+            title: this.translation.translate(
+              'ourProjectsPage.cards.card1.header'
+            ),
+            videoId: 'QAcV-Sg2iHM',
+          },
+          {
+            image: '../../../../../assets/images/brand-video.png',
+            title: this.translation.translate(
+              'ourProjectsPage.cards.card2.header'
+            ),
+            videoId: 'QAcV-Sg2iHM',
+          },
+          {
+            image: '../../../../../assets/images/music-video.png',
+            title: this.translation.translate(
+              'ourProjectsPage.cards.card3.header'
+            ),
+            videoId: 'QAcV-Sg2iHM',
+          },
+        ];
 
-  title = 'Our projects';
-  rowOne = [
-    {
-      image: '../../../../../assets/images/advertisement.png',
-      title: 'Advertisement',
-      videoId: 'QAcV-Sg2iHM',
-    },
-    {
-      image: '../../../../../assets/images/brand-video.png',
-      title: 'Brand Video',
-      videoId: 'QAcV-Sg2iHM',
-    },
-    {
-      image: '../../../../../assets/images/music-video.png',
-      title: 'Music Video',
-      videoId: 'QAcV-Sg2iHM',
-    },
-  ];
+        this.rowTwo = [
+          {
+            image: '../../../../../assets/images/media.png',
+            title: this.translation.translate(
+              'ourProjectsPage.cards.card4.header'
+            ),
+            videoId: 'QAcV-Sg2iHM',
+          },
+          {
+            image: '../../../../../assets/images/tradeshow-booth.png',
+            title: this.translation.translate(
+              'ourProjectsPage.cards.card5.header'
+            ),
+            videoId: 'QAcV-Sg2iHM',
+          },
+          {
+            image: '../../../../../assets/images/advertisement-bldg.png',
+            title: this.translation.translate(
+              'ourProjectsPage.cards.card6.header'
+            ),
+            videoId: 'QAcV-Sg2iHM',
+          },
+        ];
 
-  rowTwo = [
-    {
-      image: '../../../../../assets/images/media.png',
-      title: 'Brand Video',
-      videoId: 'QAcV-Sg2iHM',
-    },
-    {
-      image: '../../../../../assets/images/tradeshow-booth.png',
-      title: 'Tradeshow Booth',
-      videoId: 'QAcV-Sg2iHM',
-    },
-    {
-      image: '../../../../../assets/images/advertisement-bldg.png',
-      title: 'Advertisement',
-      videoId: 'QAcV-Sg2iHM',
-    },
-  ];
-
-  rowThree = [
-    {
-      image: '../../../../../assets/images/advertisment-phone.png',
-      title: 'Advertisement',
-      videoId: 'QAcV-Sg2iHM',
-    },
-    {
-      image: '../../../../../assets/images/music-video2.png',
-      title: 'Music Video',
-      videoId: 'QAcV-Sg2iHM',
-    },
-    {
-      image: '../../../../../assets/images/tradeshow-booth-ceiling.png',
-      title: 'Tradeshow Booth',
-      videoId: 'QAcV-Sg2iHM',
-    },
-  ];
+        this.rowThree = [
+          {
+            image: '../../../../../assets/images/advertisment-phone.png',
+            title: this.translation.translate(
+              'ourProjectsPage.cards.card7.header'
+            ),
+            videoId: 'QAcV-Sg2iHM',
+          },
+          {
+            image: '../../../../../assets/images/music-video2.png',
+            title: this.translation.translate(
+              'ourProjectsPage.cards.card8.header'
+            ),
+            videoId: 'QAcV-Sg2iHM',
+          },
+          {
+            image: '../../../../../assets/images/tradeshow-booth-ceiling.png',
+            title: this.translation.translate(
+              'ourProjectsPage.cards.card9.header'
+            ),
+            videoId: 'QAcV-Sg2iHM',
+          },
+        ];
+      },
+    });
+  }
 }

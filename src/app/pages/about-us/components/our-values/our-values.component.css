@@ -22,6 +22,7 @@
     flex-direction: column;
     width: 268px;
     align-items: center;
+    padding: 0 10px;
 }
 img {
     height: 120px;

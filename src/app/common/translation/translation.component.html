@@ -1,0 +1,16 @@
+<mat-form-field appearance="fill">
+  <mat-select [(value)]="selected" (valueChange)="setLocale($event)">
+    <mat-select-trigger>
+      <img src="{{ flag }}" />
+    </mat-select-trigger>
+
+    <mat-option [value]="english.locale">
+      <img style="padding-right: 10px" src="{{ english.text }}" /> English
+    </mat-option>
+
+    <mat-option [value]="norwegianBokmal.locale">
+      <img style="padding-right: 10px" src="{{ norwegianBokmal.text }}" />
+      Norwegian Bokmål
+    </mat-option>
+  </mat-select>
+</mat-form-field>
