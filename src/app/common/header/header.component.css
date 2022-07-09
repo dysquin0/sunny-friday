@@ -19,3 +19,7 @@
 .navigation-menu{
     width:100%;
 }
+
+::ng-deep .navigation-menu button.contact-us-btn {
+    left: 20%;
+}

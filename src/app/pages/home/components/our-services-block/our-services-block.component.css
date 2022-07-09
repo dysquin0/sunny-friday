@@ -1,6 +1,5 @@
 ::ng-deep  app-cards#our-services-cards mat-card{
     width: 360px;
-    height: 100% !important;
     background: #FFFFFF;
     margin: 10px;
     cursor: pointer;
