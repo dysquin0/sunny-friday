@@ -29,4 +29,5 @@
 
 ::ng-deep #cdk-overlay-0.cdk-overlay-pane {
     top: 50px !important;
+    left: 1130px !important;
 }
