@@ -1,11 +1,7 @@
 <div class="wrapper container">
   <app-section-header [title]="title"></app-section-header>
   <div class="section-header-description">
-    <p class="description">
-      Working with us should be effortless, effective and fun. The most
-      important thing for us is to have fun first, money comes second. Because
-      if you don’t have fun, you won’t earn any money.
-    </p>
+    <p class="description">{{ description }}</p>
   </div>
   <app-cards [data]="rowOne" [cardType]="'projects'"></app-cards>
   <app-cards [data]="rowTwo" [cardType]="'projects'"></app-cards>

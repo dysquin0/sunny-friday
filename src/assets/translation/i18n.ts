@@ -21,6 +21,11 @@ export const i18nAsset = {
         privacyPolicy: 'Privacy Policy',
         termsAndCondition: 'Terms & Condition',
       },
+      table: {
+        jobPerPage: 'Job per page',
+        nextPage: 'Next Page',
+        prevPage: 'Previous Page',
+      },
     },
     homePage: {
       banner: {
@@ -261,6 +266,11 @@ export const i18nAsset = {
         copyright: '© 2022 av sunnyfriday.no',
         privacyPolicy: 'Personvernerklæring',
         termsAndCondition: 'Vilkår og betingelser',
+      },
+      table: {
+        jobPerPage: 'Jobb per side',
+        nextPage: 'Neste side',
+        prevPage: 'Forrige side',
       },
     },
     homePage: {

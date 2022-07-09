@@ -54,3 +54,8 @@
 .wrapper {
     text-align: center;
 }
+
+::ng-deep .mat-primary .mat-option.mat-selected:not(.mat-option-disabled){
+    background-color: #543287;
+    color: #ffffff;
+  }
