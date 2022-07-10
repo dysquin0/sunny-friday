@@ -9,6 +9,25 @@
     padding-bottom: 40px;
 }
 
+::ng-deep  app-cards#our-services-cards mat-card{
+    width: 360px;
+    height: 520px;
+    background: #FFFFFF;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: none;  
+}
+::ng-deep  app-cards#our-services-cards mat-card-title{
+    margin-top: 16px;
+}
+::ng-deep app-cards#our-services-cards mat-card-subtitle {
+    margin-top: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;  
+    letter-spacing: 0.25px;
+}
 ::ng-deep our-services-block-modal h1.mat-dialog-title {
     font-weight: 500;
     font-size: 24px;
