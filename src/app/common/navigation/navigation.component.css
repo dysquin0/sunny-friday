@@ -35,3 +35,6 @@
 .mat-list-item:nth-child(2){
     margin-right:35px;
 } 
+.mat-list-item.active-link{
+    font-weight:800;
+}
