@@ -26,21 +26,21 @@ export class OurProjectsComponent implements OnInit {
             title: this.translation.translate(
               'homePage.ourProjects.cards.card1.header'
             ),
-            videoId: 'ty3U4R8fbLI',
+            videoId: 'o_l3NiAtoKo',
           },
           {
             image: '../../../../../assets/images/brand-video.png',
             title: this.translation.translate(
               'homePage.ourProjects.cards.card2.header'
             ),
-            videoId: 'rTJ6JAGaKz0',
+            videoId: 'o_l3NiAtoKo',
           },
           {
             image: '../../../../../assets/images/music-video.png',
             title: this.translation.translate(
               'homePage.ourProjects.cards.card3.header'
             ),
-            videoId: 'QAcV-Sg2iHM',
+            videoId: 'o_l3NiAtoKo',
           },
         ];
       },
