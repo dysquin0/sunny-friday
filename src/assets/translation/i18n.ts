@@ -1,6 +1,5 @@
 export const i18nAsset = {
   'en-US': {
-    changeLocale: 'Change locale',
     navigation: {
       home: 'Home',
       ourServices: 'Our Services',
@@ -246,7 +245,6 @@ export const i18nAsset = {
     },
   },
   'nb-NO': {
-    changeLocale: 'Endre lokalitet',
     navigation: {
       home: 'Hjem',
       ourServices: 'Våre tjenester',
