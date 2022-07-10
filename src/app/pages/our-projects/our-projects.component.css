@@ -49,6 +49,7 @@
 
 ::ng-deep app-our-projects .mat-card {
     height: unset !important;
+    box-shadow: none !important;
 }
 
 ::ng-deep .mat-primary .mat-option.mat-selected:not(.mat-option-disabled){
