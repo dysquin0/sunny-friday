@@ -38,6 +38,16 @@ Please install the following properly:
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Application translation
+
+1. Translation dictionary is located in `src\assets\translation\i18n.ts`.
+
+1. Dictionary contains navigation, common components, and set of pages.
+
+- Navigation - contains translation for header menu such as home, our services, about us and work with us.
+- Common - contains translations for components such as contact us button, etc.
+- Pages - contains translation for pages divided per component
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
