@@ -39,4 +39,6 @@
 
 ::ng-deep app-home-banner app-contact-us-btn button {
     margin: 20px auto !important;
+    padding: 15px 30px !important;
+    font-size: xx-large !important;
 }
