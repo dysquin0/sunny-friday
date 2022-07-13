@@ -1,9 +1,10 @@
 .mat-card {
-    width: 360px;
+    max-width: 360px;
     background: #FFFFFF;
     border-radius: 12px;
     margin: 0 12px;
     cursor: pointer;
+    box-shadow: unset;
 }
 
 .mat-card-title {
