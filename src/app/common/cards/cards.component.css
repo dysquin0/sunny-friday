@@ -39,7 +39,6 @@
 }
 
 ::ng-deep  app-cards#our-services-cards mat-card{
-    margin: 10px;
     box-shadow: none;  
 }
 
