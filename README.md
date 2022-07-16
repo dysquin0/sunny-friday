@@ -1,26 +1,52 @@
-# SunnyFriday
+# SUNNY FRIDAY INSTALLATION PROCEDURE - GUI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
+
+## Getting Started
+
+## Environment Set up
+
+### What are needed?
+
+Please install the following properly:
+
+- LTS version of [Node JS](https://nodejs.org/en/) with latest Version of NPM
+
+- [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2
+
+## Installation of Sunny Friday UI Dependencies
+
+1. Unpack the Sunny Friday UI source code to any preferred directory
+1. Install the node dependencies
+   ```
+       npm install
+   ```
+
+## Build the Angular application
+
+1. Run the command below
+   ```
+         npm run build
+   ```
+1. This will generate directory
+   ```
+       ~/sunny-friday/dist/sunny-friday
+   ```
+1. Please take note of the absolute path generated directory.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Application translation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Translation dictionary is located in `src\assets\translation\i18n.ts`.
 
-## Build
+1. Dictionary contains navigation, common components, and set of pages.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Navigation - contains translation for header menu such as home, our services, about us and work with us.
+- Common - contains translations for components such as contact us button, etc.
+- Pages - contains translation for pages divided per component
 
 ## Further help
 

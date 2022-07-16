@@ -1,7 +1,6 @@
 ::ng-deep app-cards {
     display: flex !important;
     justify-content: center;
-    align-items: center;
     padding-bottom: 36px;
 }
 
@@ -38,10 +37,13 @@
     height: 100%;
 }
 
-::ng-deep our-project-modal app-contact-us-btn button {
-    margin-right: 30px !important;
+::ng-deep app-cards#our-projects-cards mat-card {
+    height: unset;
+    box-shadow: none;
 }
 
-::ng-deep app-our-projects .mat-card {
-    height: unset !important;
+::ng-deep app-cards#our-projects-cards mat-card:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px 2px rgb(0 0 0 / 15%), 0px 1px 2px rgb(0 0 0 / 30%);
+    border-radius: 12px;
 }

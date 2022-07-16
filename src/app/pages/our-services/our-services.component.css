@@ -1,11 +1,6 @@
 ::ng-deep app-our-services app-cards {
     display: inline-flex;
     padding-bottom: 40px;
-    width: -webkit-fill-available;
-}
-
-.container {
-    text-align: center;
 }
 
 .section-header-description {
@@ -16,9 +11,7 @@
 
 ::ng-deep  app-cards#our-services-cards mat-card{
     width: 360px;
-    height: 520px;
     background: #FFFFFF;
-    border-radius: 0 !important;
     margin: 10px;
     cursor: pointer;
     box-shadow: none;  
@@ -45,3 +38,8 @@
     font-size: 16px;
     line-height: 24px;
 }
+
+::ng-deep .mat-primary .mat-option.mat-selected:not(.mat-option-disabled){
+    background-color: #543287;
+    color: #ffffff;
+  }

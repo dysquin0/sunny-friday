@@ -4,15 +4,14 @@ import { MaterialModule } from './material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const sharedModules: any[] = [
-    CommonModule,
-    FormsModule,
-    MaterialModule,
-    ReactiveFormsModule
+  CommonModule,
+  FormsModule,
+  MaterialModule,
+  ReactiveFormsModule,
 ];
 
 @NgModule({
-    imports: sharedModules,
-    exports: sharedModules,
+  imports: sharedModules,
+  exports: sharedModules,
 })
-
-export class SharedModule { }
+export class SharedModule {}

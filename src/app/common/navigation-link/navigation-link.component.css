@@ -20,6 +20,10 @@ a:link {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+}
+a span:hover {
+    border-bottom: 1.6px solid #543287; 
+
 }
 

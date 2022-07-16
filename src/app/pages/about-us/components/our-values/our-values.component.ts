@@ -1,41 +1,59 @@
 import { Component, OnInit } from '@angular/core';
+import { L10nLocale, L10nTranslationService } from 'angular-l10n';
 
 @Component({
   selector: 'app-our-values',
   templateUrl: './our-values.component.html',
-  styleUrls: ['./our-values.component.css']
+  styleUrls: ['./our-values.component.css'],
 })
 export class OurValuesComponent implements OnInit {
+  title: any;
+  values: any;
 
-  constructor() { }
-
+  constructor(private translation: L10nTranslationService) {}
   ngOnInit(): void {
+    this.translation.onChange().subscribe({
+      next: (locale: L10nLocale) => {
+        this.title = this.translation.translate('aboutUsPage.ourValues.header');
+        this.values = [
+          {
+            image: '../../../../../assets/images/champions.svg',
+            description: this.translation.translate(
+              'aboutUsPage.ourValues.value1'
+            ),
+          },
+          {
+            image: '../../../../../assets/images/fun.svg',
+            description: this.translation.translate(
+              'aboutUsPage.ourValues.value2'
+            ),
+          },
+          {
+            image: '../../../../../assets/images/pinwheel.svg',
+            description: this.translation.translate(
+              'aboutUsPage.ourValues.value3'
+            ),
+          },
+          {
+            image: '../../../../../assets/images/box.svg',
+            description: this.translation.translate(
+              'aboutUsPage.ourValues.value4'
+            ),
+          },
+          {
+            image: '.w./../../../../assets/images/partner.svg',
+            description: this.translation.translate(
+              'aboutUsPage.ourValues.value5'
+            ),
+          },
+          {
+            image: '../../../../../assets/images/other-companies.svg',
+            description: this.translation.translate(
+              'aboutUsPage.ourValues.value6'
+            ),
+          },
+        ];
+      },
+    });
   }
-  title = 'Our values';
-  values = [
-    {
-      image: '../../../../../assets/images/champions.svg',
-      description: 'We are not world champions before it’s written on the wall.'
-    },
-    {
-      image: '../../../../../assets/images/fun.svg',
-      description: 'Fun first, money second'
-    },
-    {
-      image: '../../../../../assets/images/pinwheel.svg',
-      description: 'We don’t always have to reinvent the wheel'
-    },
-    {
-      image: '../../../../../assets/images/box.svg',
-      description: 'We think outside the box'
-    },
-    {
-      image: '.w./../../../../assets/images/partner.svg',
-      description: 'Sparring partner: We don’t know your company as well as you do, so let’s work together towards a common goal'
-    },
-    {
-      image: '../../../../../assets/images/other-companies.svg',
-      description: ' If we don’t know something, we will suggest other companies who can help along the way'
-    },
-  ];
 }

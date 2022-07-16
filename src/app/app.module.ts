@@ -38,9 +38,12 @@ import { AboutUsModule } from './pages/about-us/about-us.module';
     AboutUsModule,
   ],
   bootstrap: [AppComponent],
-  providers: [{
-    provide: MatPaginatorIntl, 
-    useClass: WorkWithUsPaginatorIntl
-  }]
+
+  providers: [
+    {
+      provide: MatPaginatorIntl,
+      useClass: WorkWithUsPaginatorIntl,
+    },
+  ],
 })
 export class AppModule {}

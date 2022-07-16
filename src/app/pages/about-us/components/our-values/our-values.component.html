@@ -1,16 +1,31 @@
 <div class="mat-app-background container">
-    <app-section-header [title]="title"></app-section-header>
-    <div class="values-container-1">
-        <div class="img-desc-container" *ngFor="let item of values | slice:0:4;">
-            <img src={{item.image}} />
-            <div class="values-desc">{{item.description}}</div>
-        </div>     
+  <app-section-header [title]="title"></app-section-header>
+  <div class="values-container-1">
+    <div class="img-desc-container">
+      <img src="{{ values[0].image }}" />
+      <div class="values-desc">{{ values[0].description }}</div>
     </div>
-    <div class="values-container-2">
-        <div class="img-desc-container" *ngFor="let item of values  | slice: -2 ">
-            <img src={{item.image}} />
-            <div class="values-desc">{{item.description}}</div>
-        </div>     
+    <div class="img-desc-container">
+      <img src="{{ values[1].image }}" />
+      <div class="values-desc">{{ values[1].description }}</div>
     </div>
+    <div class="img-desc-container">
+      <img src="{{ values[2].image }}" />
+      <div class="values-desc">{{ values[2].description }}</div>
+    </div>
+    <div class="img-desc-container">
+      <img src="{{ values[3].image }}" />
+      <div class="values-desc">{{ values[3].description }}</div>
+    </div>
+  </div>
+  <div class="values-container-2">
+    <div class="img-desc-container">
+      <img src="{{ values[4].image }}" />
+      <div class="values-desc">{{ values[4].description }}</div>
+    </div>
+    <div class="img-desc-container">
+      <img src="{{ values[5].image }}" />
+      <div class="values-desc">{{ values[5].description }}</div>
+    </div>
+  </div>
 </div>
-    

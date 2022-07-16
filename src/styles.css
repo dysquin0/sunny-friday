@@ -70,3 +70,7 @@
 body{
   margin: 0;
 }
+
+.modal-contact-us .mat-button-wrapper{
+  font-size: 14px;
+}

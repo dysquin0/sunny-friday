@@ -14,8 +14,14 @@
 .mat-toolbar-row img{
     width: 2.5em;
     height: 2.5em;
+    text-align: center;
+    display: block;
 }
 
 .navigation-menu{
     width:100%;
+}
+
+::ng-deep .navigation-menu button.contact-us-btn {
+    left: 20%;
 }

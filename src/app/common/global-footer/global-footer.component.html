@@ -1,21 +1,51 @@
 <footer class="global-footer">
-    <div class="footer-items">
-        <div class="social-media-items">
-            <a href="https://www.facebook.com" class="social-icon" target="_blank" aria-label="facebook link"><img title="facebook" src="../../../assets/svg/facebook.svg" /></a>
-            <a href="https://www.twitter.com" class="social-icon" target="_blank" aria-label="twitter link"><img title="twitter" src="../../../assets/svg/twitter.svg" /></a>
-            <a href="https://www.instagram.com" class="social-icon" target="_blank" aria-label="instagram link"><img title="instagram" src="../../../assets/svg/instagram.svg" /></a>
-            <a href="https://www.linkedin.com" class="social-icon" target="_blank" aria-label="linkedin link"><img title="linkedin" src="../../../assets/svg/linkedin.svg" /></a>
-            <a href="https://www.youtube.com" class="social-icon" target="_blank" aria-label="youtube link"><img title="youtube" src="../../../assets/svg/youtube.svg" /></a>
-        </div>
-        <mat-divider></mat-divider>
-        <div class="copyright-privacy-tc-container">
-            <div class="copyright">
-                © 2022 by sunnyfriday.no
-            </div>
-            <div class="privacy-terms">
-                <a href="#" class="privacy-policy">Privacy Policy</a>
-                <a href="#" class="terms-condition">Terms & Condition</a>
-            </div>
-        </div>
+  <div class="footer-items">
+    <div class="social-media-items">
+      <a
+        href="https://www.facebook.com"
+        class="social-icon"
+        target="_blank"
+        aria-label="facebook link"
+        ><img title="facebook" src="../../../assets/svg/facebook.svg"
+      /></a>
+      <a
+        href="https://www.twitter.com"
+        class="social-icon"
+        target="_blank"
+        aria-label="twitter link"
+        ><img title="twitter" src="../../../assets/svg/twitter.svg"
+      /></a>
+      <a
+        href="https://www.instagram.com"
+        class="social-icon"
+        target="_blank"
+        aria-label="instagram link"
+        ><img title="instagram" src="../../../assets/svg/instagram.svg"
+      /></a>
+      <a
+        href="https://www.linkedin.com"
+        class="social-icon"
+        target="_blank"
+        aria-label="linkedin link"
+        ><img title="linkedin" src="../../../assets/svg/linkedin.svg"
+      /></a>
+      <a
+        href="https://www.youtube.com"
+        class="social-icon"
+        target="_blank"
+        aria-label="youtube link"
+        ><img title="youtube" src="../../../assets/svg/youtube.svg"
+      /></a>
     </div>
+    <mat-divider></mat-divider>
+    <div class="copyright-privacy-tc-container">
+      <div class="copyright">
+        {{ copyright }}
+      </div>
+      <div class="privacy-terms">
+        <a href="#" class="privacy-policy">{{ privacyPolicy }}</a>
+        <a href="#" class="terms-condition">{{ termsAndCondition }}</a>
+      </div>
+    </div>
+  </div>
 </footer>
