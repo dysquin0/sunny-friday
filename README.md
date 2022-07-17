@@ -38,29 +38,29 @@ Please install the following properly:
 
 Run `ng serve` at the directory for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Data source per page
+## Source per page
 
-### HOME - src\app\pages\home\home.component.ts
+1. HOME - src\app\pages\home\home.component.ts
 
-    - Our Services Section - src\app\pages\home\components\our-services-block\our-services-block.component.ts
-    - Our Projects Section - src\app\pages\home\components\our-projects\our-projects.component.ts
+   - Our Services Section - src\app\pages\home\components\our-services-block\our-services-block.component.ts
+   - Our Projects Section - src\app\pages\home\components\our-projects\our-projects.component.ts
 
-### ABOUT US - src\app\pages\about-us\about-us.component.ts
+1. ABOUT US - src\app\pages\about-us\about-us.component.ts
 
-    - About Us Section - src\app\pages\about-us\components\about-us-section\about-us-section.component.ts
-    - Meet the Team Section - src\app\pages\about-us\components\about-us-section\about-us-section.component.ts
-    - Our Values Section - src\app\pages\about-us\components\our-values\our-values.component.ts
+   - About Us Section - src\app\pages\about-us\components\about-us-section\about-us-section.component.ts
+   - Meet the Team Section - src\app\pages\about-us\components\about-us-section\about-us-section.component.ts
+   - Our Values Section - src\app\pages\about-us\components\our-values\our-values.component.ts
 
-### CONTACT US - src\app\pages\contact-us\contact-us.component.ts
+1. CONTACT US - src\app\pages\contact-us\contact-us.component.ts
 
-    - Find Us Section - src\app\pages\contact-us\components\find-us\find-us.component.ts
-    - Message Us Section - src\app\pages\contact-us\components\message-us\message-us.component.ts
+   - Find Us Section - src\app\pages\contact-us\components\find-us\find-us.component.ts
+   - Message Us Section - src\app\pages\contact-us\components\message-us\message-us.component.ts
 
-### OUR SERVICES - src\app\pages\our-services\our-services.component.ts
+1. OUR SERVICES - src\app\pages\our-services\our-services.component.ts
 
-### OUR PROJECTS - src\app\pages\our-projects\our-projects.component.ts
+1. OUR PROJECTS - src\app\pages\our-projects\our-projects.component.ts
 
-### WORK WITH US - src\app\pages\work-with-us\work-with-us.component.ts
+1. WORK WITH US - src\app\pages\work-with-us\work-with-us.component.ts
 
 ## Asset directory
 
